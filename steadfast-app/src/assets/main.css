@@ -1,0 +1,182 @@
+@import './base.css';
+
+@media (prefers-color-scheme: light) {
+
+  html,
+  body {
+    color: #000000;
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  html,
+  body {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
+
+.Card {
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid gray;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button:focus,
+button:hover,
+select,
+option,
+input:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.ToggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.ToggleInput {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ToggleLabel {
+  margin-left: 10px;
+}
+
+.ToggleSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.ToggleSlider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.ToggleInput:checked+.ToggleSlider {
+  background-color: #27b600;
+}
+
+.ToggleInput:focus+.ToggleSlider {
+  box-shadow: 0 0 1px #27b600;
+}
+
+.ToggleInput:checked+.ToggleSlider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.ToggleInput:disabled+.ToggleSlider {
+  background-color: #e9ecef;
+}
+
+/* Rounded ToggleSliders */
+.ToggleSlider.SliderRound {
+  border-radius: 34px;
+}
+
+.ToggleSlider.SliderRound:before {
+  border-radius: 50%;
+}
+
+.table {
+  border: 1px solid gray;
+}
+
+th {
+  background-color: #f5f7f7 !important;
+  color: black !important;
+}
+
+.toast {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+
+.disabled-form {
+  cursor: not-allowed;
+  pointer-events: all;
+}
+
+.nav-link {
+  color: unset !important;
+}
+
+.nested-trade-row {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+  /* Light gray background */
+}
+
+tr:hover+.nested-trade-row,
+.nested-trade-row:hover {
+  background-color: #e9ecef;
+  /* Slightly darker on hover */
+}
+
+.nested-trade-row td {
+  padding-left: calc(2rem - 3px);
+}
+
+/* .nested-trade-row td:first-child::before {
+  content: "↳";
+  margin-right: 0.5rem;
+  color: #6c757d;
+} */
+
+/* Homepage */
+.broker-logo {
+  max-height: 80px;
+  width: auto;
+}
+
+.arrow_keys {
+  max-height: 200px;
+  width: auto;
+}
+
+#enableStoploss:checked {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+#enableTarget:checked {
+  background-color: #198754;
+  border-color: #198754;
+}

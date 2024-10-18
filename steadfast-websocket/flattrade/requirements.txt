@@ -1,0 +1,6 @@
+./dist/NorenRestApiPy-0.0.20-py2.py3-none-any.whl
+websockets
+websocket_client
+requests
+pandas
+pyyaml
