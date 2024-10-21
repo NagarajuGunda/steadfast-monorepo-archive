@@ -17,7 +17,7 @@ goto menu
 :update
 REM Update the entire monorepo
 echo Updating steadfast-monorepo...
-git pull https://github.com/narenkram/steadfast-monorepo-acrhive main
+git pull https://github.com/narenkram/steadfast-monorepo-archive main
 if !errorlevel! neq 0 (
     echo Error updating steadfast-monorepo.
     goto :error
