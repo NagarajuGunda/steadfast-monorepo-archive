@@ -1,0 +1,7 @@
+
+/steadfast-api/node_modules
+/steadfast-app/node_modules
+/steadfast-websocket/flattrade/__pycache__
+/steadfast-websocket/shoonya/__pycache__
+steadfast-app/package-lock.json
+steadfast-api/package-lock.json
